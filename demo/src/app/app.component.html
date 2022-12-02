@@ -1,0 +1,47 @@
+<div class="container">
+<div class="table-responsive" style="height:500px;padding-top: 20px;">
+<table class="table table-success table-striped table-bordered">
+    <thead>
+      <tr>
+       
+        <th class="header">Firstname</th>
+        <th class="header">Lastname</th>
+        <th class="header">maidenName</th>
+        <th class="header">age</th>
+        <th class="header">gender</th>
+        <th class="header">email</th>
+        <th class="header">phone</th>
+        <th class="header">username</th>
+        <th class="header">password</th>
+        <th class="header">birthDate</th>
+        <th class="header">image</th>
+        <th class="header">bloodGroup</th>
+        <th class="header">height</th>
+        <th class="header">weight</th>
+        <th class="header">eyeColor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of userList">
+        <td>{{item["firstName"]}}</td>
+        <td>{{item["lastName"]}}</td>
+        <td>{{item["maidenName"]}}</td>
+        <td>{{item["age"]}}</td>
+        <td>{{item["gender"]}}</td>
+        <td>{{item["email"]}}</td>
+        <td>{{item["phone"]}}</td>
+        <td>{{item["username"]}}</td>
+        <td>{{item["password"]}}</td>
+        <td>{{item["birthDate"]}}</td>
+        <td><img [src]='item["image"]' height="30px" width="30px"/>  </td>
+        <td>{{item["bloodGroup"]}}</td>
+        <td>{{item["height"]}}</td>
+        <td>{{item["weight"]}}</td>
+        <td>{{item["eyeColor"]}}</td>
+
+      </tr>
+     
+    </tbody>
+  </table>
+</div>
+</div>
