@@ -9,7 +9,6 @@ export class ApiService {
   constructor(private http: HttpClient) {
    }
 
-
    getuser(){
     return this.http.get('https://dummyjson.com/users')
    }
