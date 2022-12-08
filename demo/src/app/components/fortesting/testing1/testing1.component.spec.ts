@@ -46,7 +46,7 @@ describe('Testing1Component', () => {
     component.contactForm.controls['email'].setValue('')
     component.contactForm.controls['text'].setValue('')
 debugger
-    expect(component.contactForm.errors==null).toEqual(false);
+    expect(component.contactForm.errors!=null).toBeFalse();
   })
 
 
@@ -56,7 +56,7 @@ debugger
     component.contactForm.controls['email'].setValue('vinays.urs@gmail.com')
     component.contactForm.controls['text'].setValue('dummy')
 debugger
-    expect(()=>{component.contactForm.errors==null}).toEqual(true);
+    expect(component.contactForm.errors==null).toBeTrue();
   })
 
 
