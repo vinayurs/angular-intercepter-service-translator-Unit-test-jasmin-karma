@@ -1,14 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ApiService {
+export class MockapiserviceService {
 
-  constructor(private http: HttpClient) {}
-
-   getuser(){
-    return this.http.get('https://dummyjson.com/users')
+  getuser(){
+    return of(require("./../app/mockdata/userall.json"))
    }
+
 }

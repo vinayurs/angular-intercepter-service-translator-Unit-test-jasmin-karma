@@ -29,7 +29,6 @@ export class Testing1Component implements OnInit {
   }
 
   sum(a: number,b: number){
-
     return a+b;
   }
 
